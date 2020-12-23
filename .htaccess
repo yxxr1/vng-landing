@@ -1,0 +1,11 @@
+Options All +Indexes +FollowSymLinks -SymLinksIfOwnerMatch
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([A-Za-z0-9_]+)(/+)?$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([A-Za-z0-9_]+)(/+)?$ $1.html [L]
