@@ -1,4 +1,4 @@
-Options All +Indexes +FollowSymLinks -SymLinksIfOwnerMatch
+Options All -Indexes +FollowSymLinks -SymLinksIfOwnerMatch
 
 RewriteEngine on
 
